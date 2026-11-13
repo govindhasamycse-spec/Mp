@@ -21,11 +21,11 @@ jobs:
       - name: Check project ZIP
         run: |
           ls -la
-          test -f UniversalMusicPlayer_GitHubBuild.zip
+          test -f UniversalMusicPlayer_v2_4_GitHubBuild.zip
 
       - name: Extract Android project
         run: |
-          unzip -q UniversalMusicPlayer_GitHubBuild.zip -d build-source
+          unzip -q UniversalMusicPlayer_v2_4_GitHubBuild.zip -d build-source
           ls -la build-source/UniversalMusicPlayer
 
       - name: Set up JDK 17
